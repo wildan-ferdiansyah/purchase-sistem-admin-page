@@ -11,5 +11,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/products", require("./routes/product-routes"));
+app.use('/purchases', require('./routes/purchase-routes'));
 
 module.exports = app;
